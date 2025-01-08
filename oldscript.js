@@ -42,7 +42,7 @@ function initMap() {
         { position: { lat: 23.783058305314867, lng: 90.41582137856555 }, title: "Gulshan", category: "restaurant" },
         { position: { lat: 23.777681595496105, lng: 90.41677109817356 }, title: "North End Coffee Roasters", category: "restaurant" },
         { position: { lat: 23.776998299738526, lng: 90.41675407523476 }, title: "Tabaq Coffee", category: "restaurant" },
-        { position: { lat: 23.77559816266686, lng: 90.41543410056914 }, title: "Baguette Paris", category: "restaurant" },
+        { position: { lat: 23.782024787371103, lng: 90.41605880315487 }, title: "Smith’s Caffe Regalo", category: "restaurant" },
         { position: { lat: 23.77573163846639, lng: 90.4146590846691 }, title: "Pizza Club", category: "restaurant" },
         { position: { lat: 23.774463080353446, lng: 90.41481598099385 }, title: "Grand Royal Chinese", category: "restaurant" },
         { position: { lat: 23.77452227343127, lng: 90.41599172616031 }, title: "Herfy Bangladesh", category: "restaurant" },
@@ -104,7 +104,6 @@ function initMap() {
         { position: { lat: 23.78193704066546, lng: 90.41601588781008 }, title: "Khao San", category: "restaurant" },
         { position: { lat: 23.782024787371103, lng: 90.41605880315487 }, title: "Smith’s Caffe Regalo", category: "restaurant" },
     
-
         // Category: Shopping Malls
         { position: { lat: 23.772896076537897, lng: 90.41620338526414 }, title: "Police Plaza Concord Restaurant", category: "shoppingMall" },
         { position: { lat: 23.776930591065636, lng: 90.41601512104735 }, title: "Unimart Gulshan 1", category: "shoppingMall" },
@@ -120,6 +119,22 @@ function initMap() {
         { position: { lat: 23.77421078940356, lng: 90.41688414111256 }, title: "Shinepukur Suites", category: "hotel" },
     ];
 
+    // Create counters for categories
+    let categoryCounters = {
+        restaurant: 0,
+        hotel: 0,
+        freespace: 0,
+        masjid: 0
+    };
+
+    // Update the category counters on the page
+    function updateCategoryCounters() {
+        document.getElementById("restaurantCount").innerText = `Restaurants: ${categoryCounters.restaurant}`;
+        document.getElementById("hotelCount").innerText = `Hotels: ${categoryCounters.hotel}`;
+        document.getElementById("freespaceCount").innerText = `Free Spaces: ${categoryCounters.freespace}`;
+        document.getElementById("masjidCount").innerText = `Masjids: ${categoryCounters.masjid}`;
+    }
+
     // Create markers and attach InfoWindows
     locations.forEach(location => {
         const marker = new google.maps.Marker({
@@ -128,6 +143,14 @@ function initMap() {
             title: location.title,
             icon: icons[location.category], // Assign icon based on category
         });
+
+        // Increment the counter for the relevant category
+        if (categoryCounters[location.category] !== undefined) {
+            categoryCounters[location.category]++;
+        }
+
+        // Update the counters whenever a new marker is added
+        updateCategoryCounters();
 
         // Create an InfoWindow for the marker
         const infoWindow = new google.maps.InfoWindow({
