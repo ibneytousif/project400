@@ -122,9 +122,12 @@ function initMap() {
     // Create counters for categories
     let categoryCounters = {
         restaurant: 0,
+        shoppingMall:0,
         hotel: 0,
         freespace: 0,
-        masjid: 0
+        masjid: 0,
+        publicWashroom:0,
+
     };
 
     // Update the category counters on the page
@@ -133,6 +136,8 @@ function initMap() {
         document.getElementById("hotelCount").innerText = `Hotels: ${categoryCounters.hotel}`;
         document.getElementById("freespaceCount").innerText = `Free Spaces: ${categoryCounters.freespace}`;
         document.getElementById("masjidCount").innerText = `Masjids: ${categoryCounters.masjid}`;
+        document.getElementById("shoppingMallCount").innerText = `Shopping Malls: ${categoryCounters.shoppingMall}`;
+        document.getElementById("publicWashroomCount").innerText = `Public Washrooms: ${categoryCounters.publicWashroom}`;
     }
 
     // Create markers and attach InfoWindows
