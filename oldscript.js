@@ -23,17 +23,28 @@ function initMap() {
             scaledSize: new google.maps.Size(30, 30),
         },
         masjid: {
-            url: "masjid-icon.png", // Icon for masjids
+            url: "masjid-al-nabawi.png", // Icon for masjids
             scaledSize: new google.maps.Size(30, 30),
         },
         publicWashroom: {
             url: "restroom.png", // Icon for public washrooms
             scaledSize: new google.maps.Size(30, 30),
         },
-        hotel: {
-            url: "hotel-icon.png", // Icon for hotels
-            scaledSize: new google.maps.Size(30, 30),
+        hospital: {
+            url: "medicine.png", // Icon for hotels
+            scaledSize: new google.maps.Size(25, 25),
         },
+        hotel: {
+            url: "alhambra_6367957.png", // Icon for hotels
+            scaledSize: new google.maps.Size(20, 20),
+        },
+        corporate: {
+            url: "monitoring.png", // Icon for hotels
+            scaledSize: new google.maps.Size(25, 25),
+        },
+
+        
+        
     };
 
     // Array of Locations with Categories
@@ -103,6 +114,122 @@ function initMap() {
         { position: { lat: 23.78191801864455, lng: 90.41605142707998 }, title: "A&W Restaurants Bangladesh", category: "restaurant" },
         { position: { lat: 23.78193704066546, lng: 90.41601588781008 }, title: "Khao San", category: "restaurant" },
         { position: { lat: 23.782024787371103, lng: 90.41605880315487 }, title: "Smith’s Caffe Regalo", category: "restaurant" },
+        // Gulshan - 2
+        { "position": { "lat": 23.79358651381416, "lng": 90.41809351128923 }, "title": "Soi 71", "category": "restaurant" },
+        { "position": { "lat": 23.789879212077633, "lng": 90.41665324289878 }, "title": "Manzo Restaurant Dhaka", "category": "restaurant" },
+        { "position": { "lat": 23.787556991315526, "lng": 90.41854675004083 }, "title": "The New Gulshan Plaza Restaurant(near g1)", "category": "restaurant" },
+        { "position": { "lat": 23.79519981563981, "lng": 90.41335095683324 }, "title": "Sultan’s Dine Gulshan Branch", "category": "restaurant" },
+        { "position": { "lat": 23.804447145311553, "lng": 90.41299715606941 }, "title": "Gloria Jeans Coffe’s", "category": "restaurant" },
+        { "position": { "lat": 23.80395848586066, "lng": 90.41341264467361 }, "title": "Sparrows", "category": "restaurant" },
+        { "position": { "lat": 23.80314567030348, "lng": 90.40909908358925 }, "title": "Hotel Aristocrat in Restaurant", "category": "restaurant" },
+        { "position": { "lat": 23.80396554122153, "lng": 90.40933949092879 }, "title": "The Flourist", "category": "restaurant" },
+        { "position": { "lat": 23.804078120173596, "lng": 90.40872003879157 }, "title": "Property ARK", "category": "restaurant" },
+        { "position": { "lat": 23.804691014223348, "lng": 90.4070217270649 }, "title": "Han She Ltd. (near g2 border)", "category": "restaurant" },
+        { "position": { "lat": 23.80359683009919, "lng": 90.40743261992255 }, "title": "Trading Business Need Confirmation", "category": "restaurant" },
+        { "position": { "lat": 23.800744215935627, "lng": 90.4118512596256 }, "title": "Butlers Chocolate Café", "category": "restaurant" },
+        { "position": { "lat": 23.80043723582455, "lng": 90.41160304239406 }, "title": "KHANA KHAZANA by Master Chef Sanjeev Kapoor", "category": "restaurant" },
+        { "position": { "lat": 23.795421132052628, "lng": 90.41327386824554 }, "title": "Sultan's Dine Gulshan Branch", "category": "restaurant" },
+        { "position": { "lat": 23.797401696367803, "lng": 90.41048508553708 }, "title": "Goong The Castle", "category": "restaurant" },
+        { "position": { "lat": 23.79699685786267, "lng": 90.41053410109174 }, "title": "Umai", "category": "restaurant" },
+        { "position": { "lat": 23.796406961188072, "lng": 90.41035538374211 }, "title": "VIP Shaad Fuska & Chatpoti", "category": "restaurant" },
+        { "position": { "lat": 23.795875861282273, "lng": 90.41643086931502 }, "title": "Stallo Fried Chicken", "category": "restaurant" },
+        { "position": { "lat": 23.796127044676943, "lng": 90.41742234614796 }, "title": "Bistro-E", "category": "restaurant" },
+        { "position": { "lat": 23.795875362509424, "lng": 90.41705754304672 }, "title": "KSA ALBAIK INTERNATIONAL - Gulshan 2, Dhaka", "category": "restaurant" },
+        { "position": { "lat": 23.795752923987703, "lng": 90.41495302928911 }, "title": "Chef's Table - Gulshan 2", "category": "restaurant" },
+        { "position": { "lat": 23.79572160413576, "lng": 90.41508460778037 }, "title": "C House Milano, Bangladesh", "category": "restaurant" },
+        { "position": { "lat": 23.79576752841341, "lng": 90.41487179261452 }, "title": "Domino's Pizza Chef’s Table Gulshan-2", "category": "restaurant" },
+        { "position": { "lat": 23.79592214247865, "lng": 90.4149831042841 }, "title": "Greens & Seeds", "category": "restaurant" },
+        { "position": { "lat": 23.795953766473716, "lng": 90.41492824071612 }, "title": "Comptoirs Richard", "category": "restaurant" },
+        { "position": { "lat": 23.79598269476011, "lng": 90.41495600976288 }, "title": "Crisp!", "category": "restaurant" },
+        { "position": { "lat": 23.79596445389074, "lng": 90.41506047250262 }, "title": "Tabaq Coffee", "category": "restaurant" },
+        { "position": { "lat": 23.796077547241815, "lng": 90.41484038306596 }, "title": "Tarka Express", "category": "restaurant" },
+        { "position": { "lat": 23.79566849205385, "lng": 90.41495001712062 }, "title": "Mitsuo", "category": "restaurant" },
+        { "position": { "lat": 23.795585379279498, "lng": 90.41471568302651 }, "title": "PastaMania Bangladesh", "category": "restaurant" },
+        { "position": { "lat": 23.795518206965774, "lng": 90.41411115887263 }, "title": "CP", "category": "restaurant" },
+        { "position": { "lat": 23.7937401963561, "lng": 90.41431533164597 }, "title": "Kingfisher Restaurant & Bar", "category": "restaurant" },
+        { "position": { "lat": 23.793559087698043, "lng": 90.41431250215514 }, "title": "Kacchi Bhai - Gulshan", "category": "restaurant" },
+        { "position": { "lat": 23.793393565295354, "lng": 90.41464775695536 }, "title": "Seasonal Tastes", "category": "restaurant" },
+        { "position": { "lat": 23.79276480207014, "lng": 90.4142507072119 }, "title": "El Toro Mexican Restaurant", "category": "restaurant" },
+        { "position": { "lat": 23.79336333318502, "lng": 90.41053814019767 }, "title": "PEYALA", "category": "restaurant" },
+        { "position": { "lat": 23.78874639434494, "lng": 90.416087584588 }, "title": "Raw Canvas Restaurant & Bar", "category": "restaurant" },
+        { "position": { "lat": 23.789479586066417, "lng": 90.41483730264683 }, "title": "Arsalan's Kitchen", "category": "restaurant" },
+        { "position": { "lat": 23.788211614040286, "lng": 90.41444409996832 }, "title": "China Town BBQ", "category": "restaurant" },
+        { "position": { "lat": 23.788248933786125, "lng": 90.41837903976673 }, "title": "The Coffee Bean & Tea Leaf", "category": "restaurant" },
+        { "position": { "lat": 23.793779349771366, "lng": 90.4184365612626 }, "title": "Ajo Idea Space", "category": "restaurant" },
+        { "position": { "lat": 23.79313484810021, "lng": 90.41920093339624 }, "title": "Uppercrust Boulangerie & Patisserie", "category": "restaurant" },
+        { "position": { "lat": 23.793780564895957, "lng": 90.41966424763396 }, "title": "German Club", "category": "restaurant" },
+        { "position": { "lat": 23.788120096847642, "lng": 90.41842296673458 }, "title": "The Coffee Bean & Tea Leaf", "category": "restaurant" },
+        { "position": { "lat": 23.78801873282529, "lng": 90.41686117249255 }, "title": "Panda Dumplings-PD", "category": "restaurant" },
+        { "position": { "lat": 23.788102009916166, "lng": 90.41701231654723 }, "title": "Pizzawala Gulshan", "category": "restaurant" },
+        { "position": { "lat": 23.788357982803817, "lng": 90.41908730234746 }, "title": "Da One Cafe", "category": "restaurant" },
+        { "position": { "lat": 23.788575427901748, "lng": 90.42061734499883 }, "title": "Izumi Japanese Kitchen", "category": "restaurant" },
+        { "position": { "lat": 23.78881757457963, "lng": 90.42050134773854 }, "title": "Shaw's Steakhouse", "category": "restaurant" },
+        { "position": { "lat": 23.789735404413182, "lng": 90.4193293772235 }, "title": "TAKUMI Japanese Restaurant", "category": "restaurant" },
+        { "position": { "lat": 23.791092874242313, "lng": 90.4214963498518 }, "title": "Le Bistro", "category": "restaurant" },
+        { "position": { "lat": 23.788364564708733, "lng": 90.41910341834856 }, "title": "Da One Cafe", "category": "restaurant" },
+        { "position": { "lat": 23.793750335595977, "lng": 90.4184511325198 }, "title": "Ajo Idea Space", "category": "restaurant" },
+        { "position": { "lat": 23.793327806075805, "lng": 90.41822790131559 }, "title": "China Garden Restaurant", "category": "restaurant" },
+        { "position": { "lat": 23.79472088968816, "lng": 90.41934510000142 }, "title": "Sky Pool Restaurant", "category": "restaurant" },
+        //GULSHAN 2- HOTELS AND CLUBS
+        { position: { lat: 23.796481728716653, lng: 90.41516104696979 }, title: "Hotel Bengal Blueberry", category: "hotel" },
+        { position: { lat: 23.805163719806806, lng: 90.41361942863907 }, title: "The Royal Paradise", category: "hotel" },
+        { position: { lat: 23.803950510236024, lng: 90.41467361818528 }, title: "The Capital Recreation Club", category: "hotel" },
+        { position: { lat: 23.803872812373527, lng: 90.41150385518857 }, title: "Gulshan North Club", category: "hotel" },
+        { position: { lat: 23.80247908722538, lng: 90.41000891144166 }, title: "American Club, Dhaka", category: "hotel" },
+        { position: { lat: 23.80390665490867, lng: 90.41175005748048 }, title: "Nav Court", category: "hotel" },
+        { position: { lat: 23.803059559662337, lng: 90.408862293761 }, title: "Hotel Aristocrat Inn Ltd", category: "hotel" },
+        { position: { lat: 23.803266858018613, lng: 90.40889217493714 }, title: "Hotel Lake Gulshan", category: "hotel" },
+        { position: { lat: 23.803328766092154, lng: 90.40858317694604 }, title: "Hotel Park View Ltd", category: "hotel" },
+        { position: { lat: 23.802059046877794, lng: 90.40854270727851 }, title: "Hotel Lake Castle", category: "hotel" },
+        { position: { lat: 23.797061465162944, lng: 90.41149553155151 }, title: "THE WAY Dhaka", category: "hotel" },
+        { position: { lat: 23.796857452789745, lng: 90.41053928941625 }, title: "Quality Inn", category: "hotel" },
+        { position: { lat: 23.79690679161057, lng: 90.41572273958182 }, title: "The Midori by Lakeshore", category: "hotel" },
+        { position: { lat: 23.796357026033203, lng: 90.41518323122875 }, title: "Hotel Bengal Blueberry", category: "hotel" },
+        { position: { lat: 23.79575109874911, lng: 90.41520445886108 }, title: "Maya Eco Apartment Service", category: "hotel" },
+        { position: { lat: 23.795844389314613, lng: 90.41492598525626 }, title: "Utshob Gulshan", category: "hotel" },
+        { position: { lat: 23.79462672886902, lng: 90.41394989635126 }, title: "Crowne Plaza Dhaka Gulshan, an IHG Hotel", category: "hotel" },
+        { position: { lat: 23.793383152566605, lng: 90.4147163585114 }, title: "The Westin Dhaka", category: "hotel" },
+        { position: { lat: 23.792988024835186, lng: 90.4144758264515 }, title: "Unique South Park", category: "hotel" },
+        { position: { lat: 23.79447539445092, lng: 90.41074784933637 }, title: "Gulshan Club Limited", category: "hotel" },
+        { position: { lat: 23.78919746973867, lng: 90.41457631611013 }, title: "Green Goose Guest House", category: "hotel" },
+        { position: { lat: 23.791514301268144, lng: 90.41707772372274 }, title: "Gulshan Youth Club", category: "hotel" },
+        { position: { lat: 23.792690829307965, lng: 90.41647232587152 }, title: "Nordic Club", category: "hotel" },
+        { position: { lat: 23.793173080343877, lng: 90.416453300084 }, title: "Gawsia Kajoli Lodging", category: "hotel" },
+        { position: { lat: 23.793071658884166, lng: 90.41628105617983 }, title: "루시하우스 Guest House", category: "hotel" },
+        { position: { lat: 23.788842117819563, lng: 90.42047519620132 }, title: "Rosewood Residence", category: "hotel" },
+        { position: { lat: 23.788266036690022, lng: 90.42093821114145 }, title: "Coventina Lake Suites", category: "hotel" },
+        { position: { lat: 23.78959819122847, lng: 90.42056613366994 }, title: "Aara Hospitality Services Limited", category: "hotel" },
+        { position: { lat: 23.79228924963543, lng: 90.41982458012549 }, title: "Green Leaf Apartments Lodging", category: "hotel" },
+        //MOHAKHALI RESTAURANTS
+        { position: { lat: 23.779822633153547, lng: 90.40712018301991 }, title: "Chillox Mohakhali", category: "restaurant" },
+        { position: { lat: 23.78066725697602, lng: 90.4033383047507 }, title: "Malancha Restaurant", category: "restaurant" },
+        { position: { lat: 23.779954689531984, lng: 90.40652031941109 }, title: "FRYPAN", category: "restaurant" },
+        { position: { lat: 23.779822633153547, lng: 90.40712018301991 }, title: "Chillox Mohakhali", category: "restaurant" },
+        { position: { lat: 23.78066725697602, lng: 90.4033383047507 }, title: "Malancha Restaurant", category: "restaurant" },
+        { position: { lat: 23.779954689531984, lng: 90.40652031941109 }, title: "FRYPAN", category: "restaurant" },
+        //corporate area- mohakhali
+        { position: { lat: 23.780570786211516, lng: 90.40301216503661 }, title: "Janata Bank", category: "corporate" },
+        //masjids -mohakhali
+        { position: { lat: 23.77382471431158, lng: 90.40159499625838 }, title: "Mohakhali Bus Terminal Masjid", category: "masjid" },
+        { position: { lat: 23.775609622822262, lng: 90.40176435638595 }, title: "Mohakhali Dakkhin Para Jame Masjid", category: "masjid" },
+        { position: { lat: 23.775783566196456, lng: 90.40459913886635 }, title: "Chowdhurypara Jame Masjid", category: "masjid" },
+        { position: { lat: 23.77534221491396, lng: 90.40534787507004 }, title: "সংক্রামক ব্যাধি হাসপাতাল জামে মসজিদ", category: "masjid" },
+        { position: { lat: 23.78072742424383, lng: 90.40906034668085 }, title: "Masjid-e-Gausul Azam", category: "masjid" },
+        { position: { lat: 23.775048564472183, lng: 90.41147675895856 }, title: "Niketan Central Masjid", category: "masjid" },
+
+        //hostpital -mohakhali 
+        { position: { lat: 23.776318549055826, lng: 90.41156139142262 }, title: "National Gastroliver Institute & Hospital", category: "hospital" },
+        { position: { lat: 23.776157448100072, lng: 90.40583365994542 }, title: "Infectious Diseases Hospital, Mohakhali", category: "hospital" },
+        { position: { lat: 23.776244945623667, lng: 90.3998384374194 }, title: "International Centre for Diarrhoeal Disease Research, Bangladesh (ICDDR,B)", category: "hospital" },
+        { position: { lat: 23.77667814934301, lng: 90.39911372879273 }, title: "মহাখালী কলেরা হসপিটাল", category: "hospital" },
+        { position: { lat: 23.77723543190039, lng: 90.39941536413677 }, title: "Sahic - সাহিক হসপিটাল (নাক, কান, গলা - ENT)", category: "hospital" },
+        
+        
+
+                
+
+
+
     
         // Category: Shopping Malls
         { position: { lat: 23.772896076537897, lng: 90.41620338526414 }, title: "Police Plaza Concord Restaurant", category: "shoppingMall" },
@@ -116,28 +243,35 @@ function initMap() {
         // Category: Public Washroom
         { position: { lat: 23.7795253830089, lng: 90.4157102045213 }, title: "Bhumijo Toilet (Cleaned by Domex)", category: "publicWashroom" },
         // Category: Hotels
-        { position: { lat: 23.77421078940356, lng: 90.41688414111256 }, title: "Shinepukur Suites", category: "hotel" },
+        
+        { position: { lat: 23.781948564579743, lng: 90.41638578405669 }, title: "Gulshan Medicare", category: "hospital" },
+        
     ];
 
     // Create counters for categories
     let categoryCounters = {
         restaurant: 0,
-        shoppingMall:0,
+        shoppingMall: 0,
         hotel: 0,
         freespace: 0,
         masjid: 0,
-        publicWashroom:0,
-
+        publicWashroom: 0,
+        hospital :0,
+        corporate:0,
+        
     };
+
 
     // Update the category counters on the page
     function updateCategoryCounters() {
         document.getElementById("restaurantCount").innerText = `Restaurants: ${categoryCounters.restaurant}`;
-        document.getElementById("hotelCount").innerText = `Hotels: ${categoryCounters.hotel}`;
+        document.getElementById("hospitalCount").innerText = `Hospitals: ${categoryCounters.hospital}`;
         document.getElementById("freespaceCount").innerText = `Free Spaces: ${categoryCounters.freespace}`;
         document.getElementById("masjidCount").innerText = `Masjids: ${categoryCounters.masjid}`;
         document.getElementById("shoppingMallCount").innerText = `Shopping Malls: ${categoryCounters.shoppingMall}`;
         document.getElementById("publicWashroomCount").innerText = `Public Washrooms: ${categoryCounters.publicWashroom}`;
+        document.getElementById("hotelCount").innerText = `Hotels and Clubs: ${categoryCounters.hotel}`;
+        document.getElementById("corporateCount").innerText = `Corporate Area: ${categoryCounters.corporate}`;
     }
 
     // Create markers and attach InfoWindows
